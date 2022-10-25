@@ -1,0 +1,16 @@
+{
+    "name": "direnv",
+    "id": "direnv",
+    "version": "0.1.0",
+    "description": "Install and configure direnv",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "direnv version"
+        }
+    }
+}
