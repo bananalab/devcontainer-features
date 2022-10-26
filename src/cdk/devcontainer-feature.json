@@ -1,0 +1,19 @@
+{
+    "name": "cdk",
+    "id": "cdk",
+    "version": "0.1.0",
+    "description": "Install and configure CDK.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "CDK version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

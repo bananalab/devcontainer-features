@@ -11,8 +11,8 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: ["direnv", "tfenv"]
-        baseImage: ["mcr.microsoft.com/devcontainers/base:ubuntu"]
+        features: ["direnv", "tfenv", "cdk"]
+        baseImage: ["mcr.microsoft.com/devcontainers/javascript-node:0-18"]
     steps:
       - uses: actions/checkout@v2
 

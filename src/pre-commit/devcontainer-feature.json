@@ -1,0 +1,20 @@
+{
+    "name": "pre-commit",
+    "id": "pre-commit",
+    "version": "0.1.0",
+    "description": "Install and configure pre-commit.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "pre-commit version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/python"
+    ]
+}
