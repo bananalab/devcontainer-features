@@ -4,3 +4,4 @@ set -euo pipefail
 
 VERSION=${VERSION:-"master"}
 git clone --depth=1 https://github.com/tfutils/tfenv.git?ref=${VERSION} /opt/tfenv
+$ ln -s /opt/tfenv/bin/* /usr/local/bin
