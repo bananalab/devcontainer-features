@@ -14,7 +14,7 @@
             "description": "tfenv version"
         }
     },
-    "containerEnv": {
+    "remoteEnv": {
         "PATH": "${containerEnv:PATH}:/opt/tfenv/bin"
     },
     "installsAfter": [
