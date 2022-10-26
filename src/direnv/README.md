@@ -1,7 +1,7 @@
 
 # direnv (direnv)
 
-Install and configure direnv
+Install and configure direnv.
 
 ## Example Usage
 
