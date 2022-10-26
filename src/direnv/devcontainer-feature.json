@@ -12,6 +12,11 @@
             ],
             "default": "latest",
             "description": "direnv version"
+        },
+        "auto_allow_workspaces": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Automatically allow direnv within /workspaces?"
         }
     },
     "installsAfter": [
@@ -24,5 +29,8 @@
                 "Rubymaniac.vscode-direnv"
             ]
         }
+    },
+    "containerEnv": {
+        "DIRENV_CONFIG": "/etc"
     }
 }
