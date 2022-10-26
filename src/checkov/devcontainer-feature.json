@@ -1,0 +1,20 @@
+{
+    "name": "checkov",
+    "id": "checkov",
+    "version": "0.1.0",
+    "description": "Install and configure checkov.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "checkov version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/python"
+    ]
+}
