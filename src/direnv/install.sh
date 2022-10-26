@@ -74,23 +74,15 @@ download_url=$(
   | cut -d '"' -f 4 \
   | grep "direnv.$kernel.$machine"
 )
-echo "download_url=$download_url"
 
+log "download_url=$download_url"
 log "downloading"
 curl -o "$bin_path/direnv" -fL "$download_url"
 chmod +x "$bin_path/direnv"
 
 # ** Shell customization section **
-USERNAME=${USERNAME:-"automatic"}
-if [ "${USERNAME}" = "root" ]; then 
-    user_rc_path="/root"
-else
-    user_rc_path="/home/${USERNAME}"
-fi
+log hooking bash
+echo 'eval "$(direnv hook bash)"' >> /etc/bash.bashrc
 
-if [ -f ${user_rc_path}/.bashrc ]; then
-  echo 'eval "$(direnv hook bash)"' >> ${user_rc_path}/.bashrc
-fi
-if [ -f  ${user_rc_path}/.zshrc ]; then
-  echo 'eval "$(direnv hook zsh)"' >> ${user_rc_path}/.zshrc
-fi
+log hooking zsh
+echo 'eval "$(direnv hook zsh)"' >> /etc/zsh/zshrc
