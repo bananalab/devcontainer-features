@@ -105,3 +105,13 @@ For other shells, see https://direnv.net/docs/hook.html
 Thanks!
 DONE
 }
+
+# ** Shell customization section **
+if [ "${USERNAME}" = "root" ]; then 
+    user_rc_path="/root"
+else
+    user_rc_path="/home/${USERNAME}"
+fi
+
+echo 'eval "$(direnv hook bash)"' >> ${user_rc_path}/.bashrc
+echo 'eval "$(direnv hook zsh)"' >> ${user_rc_path}/.zshrc
