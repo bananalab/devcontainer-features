@@ -87,31 +87,14 @@ set -euo pipefail
   curl -o "$bin_path/direnv" -fL "$download_url"
   chmod +x "$bin_path/direnv"
 
-  cat <<DONE
+  # ** Shell customization section **
+  if [ "${USERNAME}" = "root" ]; then 
+      user_rc_path="/root"
+  else
+      user_rc_path="/home/${USERNAME}"
+  fi
 
-The direnv binary is now available in:
-
-    $bin_path/direnv
-
-The last step is to configure your shell to use it. For example for bash, add
-the following lines at the end of your ~/.bashrc:
-
-    eval "\$(direnv hook bash)"
-
-Then restart the shell.
-
-For other shells, see https://direnv.net/docs/hook.html
-
-Thanks!
-DONE
+  echo 'eval "$(direnv hook bash)"' >> ${user_rc_path}/.bashrc
+  echo 'eval "$(direnv hook zsh)"' >> ${user_rc_path}/.zshrc
 }
 
-# ** Shell customization section **
-if [ "${USERNAME}" = "root" ]; then 
-    user_rc_path="/root"
-else
-    user_rc_path="/home/${USERNAME}"
-fi
-
-echo 'eval "$(direnv hook bash)"' >> ${user_rc_path}/.bashrc
-echo 'eval "$(direnv hook zsh)"' >> ${user_rc_path}/.zshrc
