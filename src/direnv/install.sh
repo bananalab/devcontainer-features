@@ -88,6 +88,7 @@ set -euo pipefail
   chmod +x "$bin_path/direnv"
 
   # ** Shell customization section **
+  USERNAME=${USERNAME:-"automatic"}
   if [ "${USERNAME}" = "root" ]; then 
       user_rc_path="/root"
   else
