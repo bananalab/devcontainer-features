@@ -1,6 +1,7 @@
+#!/bin/bash
 set -e
 source dev-container-features-test-lib
 
-echo "No tests yet."
+check "list-remote" tfenv list-remote | head -n 10
 
 reportResults
