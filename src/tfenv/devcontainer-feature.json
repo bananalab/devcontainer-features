@@ -1,0 +1,23 @@
+{
+    "name": "tfenv",
+    "id": "tfenv",
+    "version": "0.1.0",
+    "description": "Install and configure tfenv.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "v3.00.0"
+            ],
+            "default": "latest",
+            "description": "tfenv version"
+        }
+    },
+    "containerEnv": {
+        "PATH": "${containerEnv:PATH}:/opt/tfenv/bin"
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
