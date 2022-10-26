@@ -15,7 +15,7 @@
         }
     },
     "remoteEnv": {
-        "PATH": "${containerEnv:PATH}:/opt/tfenv/bin"
+        "PATH": "/usr/local/bin:/opt/tfenv/bin"
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
