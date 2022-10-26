@@ -1,6 +1,6 @@
 set -e
 source dev-container-features-test-lib
 
-check "version" direnv version
+echo "No tests yet."
 
 reportResults
