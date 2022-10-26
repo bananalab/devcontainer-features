@@ -18,6 +18,7 @@ Install and configure direnv.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | direnv version | string | latest |
+| auto_allow_workspaces | Automatically allow direnv within /workspaces? | boolean | true |
 
 
 
