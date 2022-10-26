@@ -12,5 +12,8 @@
             "default": "latest",
             "description": "direnv version"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }
