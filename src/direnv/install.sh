@@ -95,7 +95,11 @@ set -euo pipefail
       user_rc_path="/home/${USERNAME}"
   fi
 
-  echo 'eval "$(direnv hook bash)"' >> ${user_rc_path}/.bashrc
-  echo 'eval "$(direnv hook zsh)"' >> ${user_rc_path}/.zshrc
+  if [ -f ${user_rc_path}/.bashrc ]; then
+    echo 'eval "$(direnv hook bash)"' >> ${user_rc_path}/.bashrc
+  fi
+  if [ -f  ${user_rc_path}/.zshrc ]; then
+    echo 'eval "$(direnv hook zsh)"' >> ${user_rc_path}/.zshrc
+  fi
 }
 
