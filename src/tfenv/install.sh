@@ -43,5 +43,7 @@ tar -xf tfenv.tar.gz -C ${_tmpdir}
 mkdir -p /opt/tfenv
 mv ${_tmpdir}/tfutils-tfenv-*/* /opt/tfenv
 ln -s /opt/tfenv/bin/* /usr/local/bin
-
 rm -rf ${_tmpdir}
+
+mkdir -p /opt/tfenv/versions
+chmod 777 /opt/tfenv/versions

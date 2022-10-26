@@ -16,5 +16,13 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
-    ]
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "Rubymaniac.vscode-direnv"
+            ]
+        }
+    }
 }

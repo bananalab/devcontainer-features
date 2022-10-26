@@ -1,5 +1,0 @@
-{
-    "install_additional_python": {
-        "image": "mcr.microsoft.com/devcontainers/python"
-    }
-}
