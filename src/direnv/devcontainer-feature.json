@@ -1,13 +1,14 @@
 {
     "name": "direnv",
     "id": "direnv",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Install and configure direnv",
     "options": {
         "version": {
             "type": "string",
             "proposals": [
-                "latest"
+                "latest",
+                "v2.32.1"
             ],
             "default": "latest",
             "description": "direnv version"
