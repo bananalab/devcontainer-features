@@ -18,6 +18,7 @@ Install and configure tfenv.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | tfenv version | string | latest |
+| terraform_version | Default Terraform version | string | latest |
 
 
 
