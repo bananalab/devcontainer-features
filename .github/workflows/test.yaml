@@ -12,15 +12,7 @@ jobs:
     strategy:
       matrix:
         features:
-          [
-            "direnv",
-            "tfenv",
-            "cdk",
-            "checkov",
-            "terraform-docs",
-            "tfenv",
-            "tflint",
-          ]
+          ["direnv", "tfenv", "cdk", "terraform-docs", "tfenv", "tflint"]
         baseImage: ["mcr.microsoft.com/devcontainers/javascript-node:0-18"]
     steps:
       - uses: actions/checkout@v2
