@@ -1,0 +1,19 @@
+{
+    "name": "gcloud",
+    "id": "gcloud",
+    "version": "0.1.0",
+    "description": "Install and configure gcloud.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "gcloud version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
