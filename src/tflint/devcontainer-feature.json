@@ -1,0 +1,19 @@
+{
+    "name": "tflint",
+    "id": "tflint",
+    "version": "0.1.0",
+    "description": "Install and configure tflint.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "tflint version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
