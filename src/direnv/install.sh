@@ -86,9 +86,3 @@ echo 'eval "$(direnv hook bash)"' >> /etc/bash.bashrc
 
 log hooking zsh
 echo 'eval "$(direnv hook zsh)"' >> /etc/zsh/zshrc
-
-if [ ${AUTO_ALLOW_WORKSPACES} == "true" ]; then
-  log Writing direnv.toml
-  echo "[whitelist]" > /etc/direnv.toml
-  echo 'prefix = [ "/workspaces" ]' >> /etc/direnv.toml
-fi
