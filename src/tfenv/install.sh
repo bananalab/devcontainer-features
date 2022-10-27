@@ -47,3 +47,7 @@ rm -rf ${_tmpdir}
 
 mkdir -p /opt/tfenv/versions
 chmod 777 /opt/tfenv/versions
+
+tfenv install ${TERRAFORM_VERSION}
+tfenv use ${TERRAFORM_VERSION}
+chmod 777 /opt/tfenv/version

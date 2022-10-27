@@ -12,6 +12,14 @@
             ],
             "default": "latest",
             "description": "tfenv version"
+        },
+        "terraform_version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Default Terraform version"
         }
     },
     "installsAfter": [
