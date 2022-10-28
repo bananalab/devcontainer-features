@@ -1,0 +1,55 @@
+{
+    "name": "terraform-tools",
+    "id": "terraform-tools",
+    "version": "0.1.0",
+    "description": "Install and configure terraform-tools. terraform-docs, tflint, and tfenv",
+    "options": {
+        "install_terraform_docs": {
+            "type": "boolean",
+            "default": "true"
+        },
+        "terraform_docs_version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "terraform-docs version"
+        },
+        "install_tflint": {
+            "type": "boolean",
+            "default": "true"
+        },
+        "tflint_version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "tflint version"
+        },
+        "install_tfenv": {
+            "type": "boolean",
+            "default": "true"
+        },
+        "tfenv_version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "tfenv version"
+        },
+        "tfenv_default_terraform_version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Terraform version to install version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
