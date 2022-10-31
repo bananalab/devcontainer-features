@@ -1,7 +1,7 @@
 {
     "name": "terraform-tools",
     "id": "terraform-tools",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Install and configure terraform-tools. terraform-docs, terragrunt, tfenv and tflint",
     "options": {
         "install_terraform_docs": {
