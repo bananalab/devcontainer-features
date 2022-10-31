@@ -2,7 +2,7 @@
     "name": "terraform-tools",
     "id": "terraform-tools",
     "version": "0.1.0",
-    "description": "Install and configure terraform-tools. terraform-docs, tflint, and tfenv",
+    "description": "Install and configure terraform-tools. terraform-docs, terragrunt, tfenv and tflint",
     "options": {
         "install_terraform_docs": {
             "type": "boolean",
@@ -47,6 +47,18 @@
             ],
             "default": "latest",
             "description": "Terraform version to install version"
+        },
+        "install_terragrunt": {
+            "type": "boolean",
+            "default": "true"
+        },
+        "terragrunt_version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "terragrunt version"
         }
     },
     "installsAfter": [

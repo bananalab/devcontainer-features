@@ -131,6 +131,14 @@ download_and_install_terraform_docs() {
   rm -rf "${_tmpdir}"
 }
 
+download_and_install_terragrunt() {
+  local _version=${1}
+  local _repo="gruntwork-io/terragrunt"
+  local _archive_url=$(get_release_archive_url ${_repo} ${_version} "terragrunt_$(get_kernel)_$(get_machine)")
+  curl -o "/usr/local/bin/terragrunt" -fL "${_archive_url}"
+  chmod +x /usr/local/bin/terragrunt
+}
+
 if [ "${INSTALL_TFENV}" == "true" ]; then
   download_and_install_tfenv ${TFENV_VERSION}
 fi
@@ -141,4 +149,8 @@ fi
 
 if [ "${INSTALL_TERRAFORM_DOCS}" == "true" ]; then
   download_and_install_terraform_docs ${TERRAFORM_DOCS_VERSION}
+fi
+
+if [ "${INSTALL_TERRAGRUNT}" == "true" ]; then
+  download_and_install_terragrunt ${TERRAGRUNT_VERSION}
 fi

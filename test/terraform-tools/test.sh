@@ -9,4 +9,6 @@ check "[tflint] version" tflint --version
 
 check "[terraform-docs] version" terraform-docs --version
 
+check "[terragrunt] version" terragrunt --version
+
 reportResults
