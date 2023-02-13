@@ -7,9 +7,7 @@ Install and configure checkov.
 
 ```json
 "features": {
-    "ghcr.io/bananalab/devcontainer-features/checkov:0": {
-        "version": "latest"
-    }
+    "ghcr.io/bananalab/devcontainer-features/checkov:0": {}
 }
 ```
 

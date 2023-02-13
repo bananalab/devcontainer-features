@@ -7,9 +7,7 @@ Install and configure pre-commit.
 
 ```json
 "features": {
-    "ghcr.io/bananalab/devcontainer-features/pre-commit:0": {
-        "version": "latest"
-    }
+    "ghcr.io/bananalab/devcontainer-features/pre-commit:0": {}
 }
 ```
 
