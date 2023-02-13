@@ -15,6 +15,7 @@ jobs:
       - name: "Publish Features"
         uses: devcontainers/action@v1
         with:
+          disable-schema-validation: true
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"
