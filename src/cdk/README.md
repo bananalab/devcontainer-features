@@ -7,9 +7,7 @@ Install and configure CDK.
 
 ```json
 "features": {
-    "ghcr.io/bananalab/devcontainer-features/cdk:0": {
-        "version": "latest"
-    }
+    "ghcr.io/bananalab/devcontainer-features/cdk:0": {}
 }
 ```
 
