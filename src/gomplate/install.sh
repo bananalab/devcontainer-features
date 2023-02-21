@@ -48,7 +48,7 @@ download_url=$(
   curl -sfL $_release_url \
   | grep browser_download_url \
   | cut -d '"' -f 4 \
-  | grep "gomplate_${kernel}-${machine}-slim"
+  | grep "gomplate_${kernel}-${machine}"
 )
 log "download_url=$download_url"
 
