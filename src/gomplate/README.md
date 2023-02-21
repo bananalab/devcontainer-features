@@ -1,15 +1,13 @@
 
-# terraform-docs (terraform-docs)
+# gomplate (gomplate)
 
-Install and configure terraform-docs.
+Install and configure gomplate.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/bananalab/devcontainer-features/terraform-docs:0": {
-        "version": "latest"
-    }
+    "ghcr.io/bananalab/devcontainer-features/gomplate:0": {}
 }
 ```
 
@@ -17,10 +15,10 @@ Install and configure terraform-docs.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | terraform-docs version | string | latest |
+| version | gomplate version | string | latest |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/bananalab/devcontainer-features/blob/main/src/terraform-docs/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/bananalab/devcontainer-features/blob/main/src/gomplate/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
