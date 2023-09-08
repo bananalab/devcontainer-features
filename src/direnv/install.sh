@@ -86,3 +86,10 @@ echo 'eval "$(direnv hook bash)"' >> /etc/bash.bashrc
 
 log hooking zsh
 echo 'eval "$(direnv hook zsh)"' >> /etc/zsh/zshrc
+
+# ** Authorize workspace **
+mkdir -p ${_CONTAINER_USER_HOME}/.config/direnv
+cat << 'EOF' > ${_CONTAINER_USER_HOME}/.config/direnv/direnv.toml
+[whitelist]
+prefix = [ "/workspaces" ]
+EOF
