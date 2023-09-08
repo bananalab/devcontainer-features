@@ -7,7 +7,7 @@ Install and configure direnv.
 
 ```json
 "features": {
-    "ghcr.io/bananalab/devcontainer-features/direnv:0": {}
+    "ghcr.io/bananalab/devcontainer-features/direnv:1": {}
 }
 ```
 
