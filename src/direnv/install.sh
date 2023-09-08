@@ -88,8 +88,8 @@ log hooking zsh
 echo 'eval "$(direnv hook zsh)"' >> /etc/zsh/zshrc
 
 # ** Authorize workspace **
-mkdir -p ${_CONTAINER_USER_HOME}/.config/direnv
-cat << 'EOF' > ${_CONTAINER_USER_HOME}/.config/direnv/direnv.toml
+mkdir -p /etc/skel/.config/direnv
+cat << 'EOF' > /etc/skel/.config/direnv/direnv.toml
 [whitelist]
 prefix = [ "/workspaces" ]
 EOF
