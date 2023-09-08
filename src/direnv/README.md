@@ -17,6 +17,12 @@ Install and configure direnv.
 |-----|-----|-----|-----|
 | version | direnv version | string | latest |
 
+## Customizations
+
+### VS Code Extensions
+
+- `Rubymaniac.vscode-direnv`
+
 
 
 ---
